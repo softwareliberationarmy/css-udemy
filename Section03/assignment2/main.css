@@ -1,0 +1,24 @@
+.box {
+    padding: 10px 20px 30px 40px;
+    border: dotted 10px blue;
+    margin: 40px 30px 20px 10px;
+    height: 300px;
+    width: 45%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.box:last-of-type:hover {
+    background-color: red;
+}
+html, body { 
+    height: 100%;
+}
+#first-box { 
+    /* display: none; */
+    /* visibility: hidden; */
+}
+/* #first-box {
+    height: 300px;
+    width: 50%;
+    box-sizing: border-box;
+} */
