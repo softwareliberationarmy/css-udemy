@@ -1,0 +1,43 @@
+.plan {
+    border: 3px solid #013801;
+    margin: 15px 15px 15px 0;
+    padding: 12px 25px;
+    width: 70%;
+    font-size: 12px;
+}
+
+.plan a {
+    text-decoration: none;
+}
+
+.plan .plan__title {
+    color: black;
+}
+
+.plan .plan__subtitle {
+    color: #939292;
+}
+
+.plan .plan__description {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.plan--plus {
+    background-color: #c7e8c7;
+}
+
+.plan--free {
+    background-color: #f6f0e9;
+}
+
+.plan--premium {
+    background-color: #033b03;
+    color: white;
+}
+
+.plan--premium .plan__title {
+    color: white;
+}
