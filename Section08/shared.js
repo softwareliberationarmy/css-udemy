@@ -7,33 +7,33 @@ const selectPlanButtons = document.querySelectorAll('.plan button');
 
 for (const button of selectPlanButtons) {
   button.addEventListener('click', () => {
-    backdrop.style.display = 'block';
-    modal.style.display = 'block';
+    modal.classList.add('open');
+    backdrop.classList.add('open');
   });
 }
 
 backdrop.addEventListener('click', () => {
-  backdrop.style.display = 'none';
-  modal.style.display = 'none';
+  backdrop.classList.remove('open');
+  modal.classList.remove('open');
 });
 
 backdrop.addEventListener('click', () => {
-  mobileNav.style.display = 'none';
+  mobileNav.classList.remove('open');
   closeModal();
 });
 
 function closeModal() {
-  modal.style.display = 'none';
-  backdrop.style.display = 'none';
+  modal.classList.remove('open');
+  backdrop.classList.remove('open');
 }
 
 const noButton = modal.querySelector('.modal__action--negative');
 noButton.addEventListener('click', () => {
-  backdrop.style.display = 'none';
-  modal.style.display = 'none';
+  backdrop.classList.remove('open');
+  modal.classList.remove('open');
 });
 
 toggleButton.addEventListener('click', () => {
-  mobileNav.style.display = 'block';
-  backdrop.style.display = 'block';
+  mobileNav.classList.add('open');
+  backdrop.classList.add('open');
 });
