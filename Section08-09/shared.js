@@ -28,10 +28,12 @@ function closeModal() {
 }
 
 const noButton = modal.querySelector('.modal__action--negative');
-noButton.addEventListener('click', () => {
-  backdrop.classList.remove('open');
-  modal.classList.remove('open');
-});
+if (noButton) {
+  noButton.addEventListener('click', () => {
+    backdrop.classList.remove('open');
+    modal.classList.remove('open');
+  });
+}
 
 toggleButton.addEventListener('click', () => {
   mobileNav.classList.add('open');
